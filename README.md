@@ -44,6 +44,6 @@ This project applied successfully Logistic Regression, K-Nearest Neighbours for 
 
 ### References.
 
-[1]	Python Software Foundation, "Python Language Reference, version 3.10," Python.org, 2023. [Online]. Available: https://www.python.org/
-[2]	Pandas Development Team, “Options and settings,” Pandas Documentation, 2024. [Online]. Available: https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html
-[3] C. Moffitt, “Cleaning up currency data with Pandas,” Practical Business Python, May 2018. [Online]. Available: https://pbpython.com/currency-cleanup.html
+[1]	Python Software Foundation, "Python Language Reference, version 3.10," Python.org, 2023. [Online]. Available: https://www.python.org/.<br>
+[2]	Pandas Development Team, “Options and settings,” Pandas Documentation, 2024. [Online]. Available: https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html <br>
+[3] C. Moffitt, “Cleaning up currency data with Pandas,” Practical Business Python, May 2018. [Online]. Available: https://pbpython.com/currency-cleanup.html<br>
