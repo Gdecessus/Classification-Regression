@@ -1,26 +1,46 @@
-#Diabetes and house prediction
+# Diabetes and House Prediction.
+
 This project explores the use of machine learning techniques to resolve classification and regression problems. Logistic Regression and K-Nearest Neighbors are used, compared to get the best outcome of classification tasks, and Linear Regression is used for regression analysis. The datasets used in this project are both trying to predict something; for instance, the Linear Regression dataset chosen aims to predict housing prices, while the dataset for classification aims to try and predict health outcomes, in particular, diabetes.
 Machine learning models do tend to face challenges like data preprocessing and performance variability with different types of data. This project implements the use of algorithms to address those problems using proper data preparation techniques. Encoding categorical variables, scaling numerical features, and splitting data into training and testing sets were the most prominent in this project.
 Logistic Regression and K-NN (K-Nearest Neighbors) were compared during the classification task using metrics like accuracy, precision, and recall determining which algorithm had the strongest and best outcome to work with the task at hand. Linear Regression was assessed for its effectiveness in predicting continuous variables using Mean Squared Error (MSE) and R² as evaluation metrics.
 The results from both tasks showed that Logistic Regression works best for datasets with clear, linear relationships. K-NN is better at handling datasets that are more complex and non-linear. For regression, Linear Regression effectively models relationships, but it also requires careful feature scaling to perform well. This project does highlight the importance of picking the correct algorithm based on the dataset's characteristics and provides practical knowledge on how to apply these techniques in real-world scenarios like the ones we applied in this project.
 
-## I.	Introduction
+## I.	Introduction.
 
 Machine learning and Artificial Intelligence have become a significant cornerstone in modern technology; it solves multiple problems and is able to facilitate multiple fields. Regression and classification are two essential techniques that are widely used in machine learning for fields like healthcare, real estate, social science, and plenty more.
 This project highlights the importance of machine learning and its impact on the social and economic world. Predicting diabetes, for example, can improve how health workers can use machine learning to improve early diagnostics and reduce healthcare costs, while accurate housing price prediction benefits first-time buyers, sellers, and policymakers in making decisions. It's important to note that a few challenges, such as data preprocessing, model interpretability, and performance, can pose barriers. This project aims to address the challenges, and it employs appropriate machine learning algorithms and techniques.
 Having two cousins that were diagnosed with diabetes in their early teens made me choose this dataset. Being able to successfully use machine learning and technological tools to address such devastating health conditions makes this project a beautiful example of how technology can be used to target end-users in the healthcare sector.
 
-## II. Methodology
+## II. Methodology.
 
 This project employs multiple technologies, such as Python and its libraries: pandas and NumPy for data manipulation and analysis, scikit-learn for implementing machine learning models, Matplotlib and Seaborn for visualizing data, StandardScaler from scikit-learn to scale numerical features, LabelEncoder for converting categorical variables into numerical format, and train_test_split for dividing the dataset into training and testing.
 During preprocessing of Linear Regression task I had to encode some categorical variables, Apartment Type, Renovation, Metro Station and Region. The reasoning behind is that those variables were fundamental in order to properly predict houses price, whether the house is located close to a metro station, it has renovation done, is located within a certain region and the apartment type influences dramatically house prices therefore they had to be encoded to be fully used in a regression model. Preprocessing for the Classification task was similar but instead we encoded gender and smoking history, encoding it into a unique integer.
 Each algorithm was evaluated using metrics specific to its purpose. Logistic Regression and KNN were used to perform classification, K-NN values were; Euclidean distance with uniform weighting, Manhattan distance with uniform weighting, Euclidean distance with distance-based weighting, Manhattan distance with distance-based weighting.were assessed for classification accuracy, precision, and recall, while Linear Regression was evaluated using Mean Squared Error (MSE) and R² used two models one with all target variables available on the dataset as metrics and the other model used specific variables that were doing better doing preprocessing and were deemed more useful. The datasets were carefully prepared, including the encoding of variables, scaling of numerical features, and splitting of the data into training and testing sets to ensure that the model would have robust performance.
 
-## III. Results and Discussion
+## III. Results and Discussion.
 
 The statistics show that for house prices dataset using regression the target variable had a mean of €433,455 with a standard deviation (SD) of €993,907, and an interquartile range (IQR) of €212,277 (€84,817-€297,590). In the classification dataset(diabetes), the target variable (diabetes outcome) was binary, with 65% of records indicating non-diabetic and 35% indicating diabetic cases. Some features were key in influencing the target, such as glucose levels (mean: 138 mg/dL, SD: 40 mg/dL, min: 80 mg/dL, Q1: 100 mg/dL, median: 140 mg/dL, Q3: 159 mg/dL, max: 300 mg/dL), were also taken into analysis. K-NN performed better at 96.4% accuracy, while Logistic Regression has 96.16% accuracy. 
 Both tasks (Linear Regression and Classification) did well on their prediction of the target variable, while Linear Regression first model using all variables was able to have a 64.4% accuracy the second model using targeted variables achieved a 64.1% accuracy, the Mean Squared Error was 0.274 for the model with all features and 0.276 for the model with selected features, Mean Absolute Error was 0.232 for the model with all features and 0.230 for the model with selected features. This indicates that the model with all features perform marginally better overall based on R² and MSE, and the model with selected features is simpler as it uses only 4 features and achieve a better Mean Absolute Error with a very close accuracy between both models.
 Classification task had very similar results between both models (K-NN and Logistic Regression), K-NN values were; Euclidean distance with uniform weighting, Manhattan distance with uniform weighting, Euclidean distance with distance-based weighting, Manhattan distance with distance-based weighting. They all performed pretty stable around 96% with Manhattan distance with distance weighting performing best at 96.5%. Logistic Regression (confusion matrix) performed at 96.16% accuracy, from both of those models its clear that K-NN performed best overall for this dataset.
 Boxplots revealed outliers in housing prices and glucose levels, Confusion Matrix provides a detailed overview of Logistic Regression.
+![image](https://github.com/user-attachments/assets/f7b3eba3-fdce-4eec-ac63-1cf762cdabbb)
+![image](https://github.com/user-attachments/assets/82a27a37-9e74-47e2-932b-71d486ec72a4)
+![image](https://github.com/user-attachments/assets/2b8fcb9e-d58f-4b76-a597-eec7b86c0c52)
+![image](https://github.com/user-attachments/assets/4f59c3fc-a618-4c67-8b9e-686756637bca)
+![image](https://github.com/user-attachments/assets/242dc9a9-f9dc-4423-91f4-c0ba66305fb7)
+![image](https://github.com/user-attachments/assets/3f68475e-eb64-4687-a5b4-a42e9ee79236)
+![image](https://github.com/user-attachments/assets/e22c0700-5644-48bc-be34-4683af054d33)
+![image](https://github.com/user-attachments/assets/2d97a83d-e719-468b-901e-21bf474b6d21)
+![image](https://github.com/user-attachments/assets/50b5890b-5972-4acd-8aca-5ce1d3bd93ca)
+![image](https://github.com/user-attachments/assets/b81ff439-5b6f-4739-bc4c-26dc94e0a292)
 
-![image](https://github.com/user-attachments/assets/a8e6276e-e66d-4d23-bfbb-5764639fba5b)
+## IV. Conclusion and Future Work.
+
+This project applied successfully Logistic Regression, K-Nearest Neighbours for classification task (Diabetes prediction) and Linear Regression for the regression task (House price prediction). K-NN did outperform Logistic Regression in Classification, with peak accuracy at 96.4% with Manhattan distance and distance-based weighting, while Logistic regression achieved 96.16%. Misclassification was only noticed in cases with intermediate glucose levels, this indicated that overlapping class boundaries. In regression, Linear Regression did achieve R squared of 64.4% using all features meanwhile 64.1% was achieved for selected features. I observed high residuals for extreme house prices, due to sensitivity to outliers. Limitations were found in imbalanced data in the classification task, Outliers in the regression data, and the fact that we only had knowledge of basic models of machine learning. In future projects I would like to address these problems by experiencing different algorithms, using more advanced techniques and playing around with features without a time constraint. 
+
+
+
+### References.
+
+[1]	Python Software Foundation, "Python Language Reference, version 3.10," Python.org, 2023. [Online]. Available: Link.
+[2]	Pandas Development Team, “Options and settings,” Pandas Documentation, 2024. [Online]. Available: Link. 
