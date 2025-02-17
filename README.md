@@ -1,4 +1,4 @@
-# Diabetes and House Prediction.
+#                                Diabetes and House Prediction.
 
 This project explores the use of machine learning techniques to resolve classification and regression problems. Logistic Regression and K-Nearest Neighbors are used, compared to get the best outcome of classification tasks, and Linear Regression is used for regression analysis. The datasets used in this project are both trying to predict something; for instance, the Linear Regression dataset chosen aims to predict housing prices, while the dataset for classification aims to try and predict health outcomes, in particular, diabetes.
 Machine learning models do tend to face challenges like data preprocessing and performance variability with different types of data. This project implements the use of algorithms to address those problems using proper data preparation techniques. Encoding categorical variables, scaling numerical features, and splitting data into training and testing sets were the most prominent in this project.
@@ -42,5 +42,6 @@ This project applied successfully Logistic Regression, K-Nearest Neighbours for 
 
 ### References.
 
-[1]	Python Software Foundation, "Python Language Reference, version 3.10," Python.org, 2023. [Online]. Available: Link.
-[2]	Pandas Development Team, “Options and settings,” Pandas Documentation, 2024. [Online]. Available: Link. 
+[1]	Python Software Foundation, "Python Language Reference, version 3.10," Python.org, 2023. [Online]. Available: https://www.python.org/
+[2]	Pandas Development Team, “Options and settings,” Pandas Documentation, 2024. [Online]. Available: https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html
+[3] C. Moffitt, “Cleaning up currency data with Pandas,” Practical Business Python, May 2018. [Online]. Available: https://pbpython.com/currency-cleanup.html
